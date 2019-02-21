@@ -59,8 +59,9 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6a00), to(#ee0979));
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  margin-top: 4.2rem;
+  background: url('../img/tiger_bkgd.jpg');
+  /* background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%); */
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -84,36 +85,8 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ee0979), to(#ff6a00));
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
-}
-
-header.masthead .bg-circle-1 {
-  height: 90rem;
-  width: 90rem;
-  bottom: -55rem;
-  left: -55rem;
-}
-
-header.masthead .bg-circle-2 {
-  height: 50rem;
-  width: 50rem;
-  top: -25rem;
-  right: -25rem;
-}
-
-header.masthead .bg-circle-3 {
-  height: 20rem;
-  width: 20rem;
-  bottom: -10rem;
-  right: 5%;
-}
-
-header.masthead .bg-circle-4 {
-  height: 30rem;
-  width: 30rem;
-  top: -5rem;
-  right: 35%;
+  /* background: -webkit-gradient(linear, left bottom, left top, from(#ee0979), to(#ff6a00)); */
+  /* background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%); */
 }
 
 @media (min-width: 992px) {
@@ -161,4 +134,46 @@ header.masthead .bg-circle-4 {
 .btn-secondary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+
+/* images */
+.img-container {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  /* border-radius: 50%; */
+}
+
+.img-container img.rounded-circle {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+}
+
+/* games */
+
+.g2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.g2_space {
+  flex: 0;
+}
+
+#game-box {
+  background-color: #c0c0c0;
+  padding: 10px 10px 8px 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+#game {
+  height: 600px;
+  width: 70vw;
+}
+
+#game_embed {
+  height: 600px;
 }
